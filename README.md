@@ -13,6 +13,7 @@ cp .env.example .env # Если будет необходимо внести и�
 cd ../deploy
 docker compose up -d --build
 docker compose exec app composer install 
+docker compose exex app php artisan jwt:secret
 ```
 
 Для запуска миграций и заполнения БД тестовыми данными скопируйте в терминал следующее:
